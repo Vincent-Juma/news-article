@@ -14,6 +14,25 @@ def register():
     return render_template('register.html', title='Register')
 
 
+@app.route("/about")
+def about():
+    return render_template('about.html', title='About')
+
+@app.route("/Account")
+def account():
+    return render_template('account.html', title='Account')
+
+
+@app.route("/post")
+def post():
+    return render_template('post.html', title='Post')
+
+
+
+
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
 
