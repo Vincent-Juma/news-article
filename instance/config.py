@@ -1,4 +1,3 @@
-NEWS_API_KEY = '3c82ea4131dd41b0b777eee004edca9c'
 
 # from flask import Flask
 # from .config import DevConfig
@@ -17,6 +16,7 @@ from flask_bcrypt import Bcrypt
 from flask_login import LoginManager
 
 app = Flask(__name__)
+NEWS_API_KEY = '3c82ea4131dd41b0b777eee004edca9c'
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
 db = SQLAlchemy(app)
 bcrypt = Bcrypt(app)
