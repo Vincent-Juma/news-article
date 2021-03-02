@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <div class="container">
+    <h3></h3>
+    {% for article in articles %}
+      <div class="row justify-content-center">
+        <div class="card cstm-card">
+          <div class="card bg-dark text-white cstm-card">
+            <img src="{{ article.url_to_image }}" alt="{{ article.title }}" class="card-img">
+            <div class="card-img-overlay cstm-card-img-overlay">
+              <div>
+                  <h5 class="card-title">{{ article.title }}</h5>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <p>{{ article.description }}</p>
+            <a href="{{ article.url }}" class="btn btn-dark">Read entire story</a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
