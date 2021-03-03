@@ -1,2 +1,5 @@
+virtual
+start.ps1
 *.pyc
-virtual/instance
+.vscode
+instance
